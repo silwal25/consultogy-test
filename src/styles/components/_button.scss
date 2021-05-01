@@ -1,0 +1,16 @@
+.btn {
+  border-radius: 20rem;
+  padding: 1.5rem 3rem;
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  backface-visibility: hidden;
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 4rem rgba($color: $color-primary, $alpha: 0.25);
+    outline: none;
+  }
+}
