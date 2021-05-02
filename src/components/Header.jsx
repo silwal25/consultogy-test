@@ -28,18 +28,18 @@ export default function Header() {
         </div>
         <ul className="header__navigation">
           <li className="header__navigation-item">
-            <a href="#" className="header__navigation-link">
+            <a href="/" className="header__navigation-link">
               Support
             </a>
           </li>
           <span className="divider">&nbsp;</span>
           <li className="header__navigation-item">
-            <a href="#" className="header__navigation-link">
+            <a href="/" className="header__navigation-link">
               log in
             </a>
           </li>
           <li className="header__navigation-item">
-            <a href="#" className="header__navigation-link">
+            <a href="/" className="header__navigation-link">
               sign up
             </a>
           </li>
