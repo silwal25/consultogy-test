@@ -76,7 +76,7 @@
     & > * {
       margin: 0 3rem;
     }
-    transition: all 0.3s ease-in;
+    transition: visibility 0.3s ease-in;
   }
   .content-background {
     height: 6rem;
@@ -236,7 +236,7 @@
       //display: none;
       position: fixed;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       height: 100vh;
       width: 100%;
@@ -245,7 +245,13 @@
       z-index: 100;
       visibility: hidden;
       pointer-events: none;
-
+      transition: visibility 0.3s ease-in;
+      & > * {
+        margin: 5rem 3rem;
+        &:first-child {
+          margin-top: 10rem;
+        }
+      }
       //background-color: lightcoral;
     }
     &__search {

@@ -1,5 +1,19 @@
 .navigation {
   padding: 5rem 0;
+  .btn {
+    display: none;
+    width: 100%;
+    text-transform: capitalize;
+    &::after {
+      content: '';
+      height: 1rem;
+      width: 1rem;
+      background-color: currentColor;
+      display: inline-block;
+      clip-path: polygon(0 50%, 50% 80%, 100% 50%, 100% 70%, 50% 100%, 0 70%);
+      margin-left: 1rem;
+    }
+  }
   &__nav {
     display: flex;
     list-style: none;
@@ -8,6 +22,7 @@
   }
   &__nav-item {
     margin: 2rem 2rem;
+    transition: all 0.2s ease-in;
   }
   &__nav-link {
     text-decoration: none;
@@ -26,9 +41,20 @@
     color: #fff;
   }
   @include respond(xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn {
+      display: block;
+    }
     &__nav {
       flex-direction: column;
       align-items: center;
+      display: none;
+    }
+    .btn:hover ~ &__nav,
+    &__nav:hover {
+      display: flex;
     }
   }
 }
